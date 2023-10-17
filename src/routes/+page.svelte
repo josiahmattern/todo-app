@@ -105,10 +105,10 @@
 					</div>
 				</li>
 			{:else}
-				<p>No todos found</p>
+				<p class="flex justify-between p-2 font-semibold">No todos found</p>
 			{/each}
-			<p class="error">{error}</p>
 		</ol>
+		<p class="error flex justify-between font-semibold">{error}</p>
 	</div>
 </div>
 
@@ -120,6 +120,6 @@
 		@apply text-gray-400 ;
 	}
 	.error {
-		@apply text-red-600;
+		@apply text-red-600 py-5 pl-2 font-bold;
 	}
 </style>
